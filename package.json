@@ -1,0 +1,22 @@
+{
+  "name": "activitybot",
+  "version": "1.0.0",
+  "description": "An activity tracking discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biggant2/activitybot.git"
+  },
+  "author": "biggant2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biggant2/activitybot/issues"
+  },
+  "homepage": "https://github.com/biggant2/activitybot#readme",
+  "dependencies": {
+    "discord.js": "^11.6.4"
+  }
+}
