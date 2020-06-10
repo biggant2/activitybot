@@ -9,14 +9,14 @@ const { token, defaultPrefix } = require('./config.json')
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (file of commandFiles) {
-	const command = require(`./commands/${file}`);
+    const command = require(`./commands/${file}`);
     client.commands.set(command.help.name, command);
-    
+
     console.log(`Loaded ${file}`)
 }
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}`);
+    console.log(`Logged in as ${client.user.tag}`);
 });
 
 client.on('message', (message) => {
