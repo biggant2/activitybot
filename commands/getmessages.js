@@ -1,4 +1,3 @@
-const Discord = require('discord.js');
 const fetchMessages = require('../fetchMessages.js');
 
 exports.run = async (client, message, args) => {
