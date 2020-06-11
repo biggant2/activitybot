@@ -1,5 +1,4 @@
 exports.run = (client, message, args) => {
-    console.log(args);
     return message.channel.send("test");
 }
 
