@@ -40,7 +40,6 @@ exports.afterDate = async (channel, {after}) => {
     let messages = new Discord.Collection();
     let earliestTimestamp = new Date();
     let lastId = channel.lastMessageID;
-    console.log(after)
 
     while(earliestTimestamp > after) {
         let partialMessages = await channel.fetchMessages({limit: 100, before: lastId})
