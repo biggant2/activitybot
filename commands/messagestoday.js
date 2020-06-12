@@ -16,10 +16,10 @@ exports.run = async (client, message, args) => {
     })
     await Promise.all(promise);
 
-    console.log(messages.map(message => message.content))
+    message.channel.send(messages.map(message => message.content).reverse(), {split: true})
 }
 
 exports.help = {
     "name": "messagestoday",
-    "description": "log all of today's messages"
+    "description": "outputs all of today's messages"
 }
